@@ -1,0 +1,38 @@
+.profile-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.profile-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.profile-section h5 {
+    font-weight: 700;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (min-width: 992px) {
+
+    .profile-lower-sections {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .profile-lower-sections > div {
+        flex: 1;
+    }
+}

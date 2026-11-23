@@ -1,0 +1,132 @@
+.offense-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px 18px 24px;
+    margin-bottom: 14px;
+    border: 1px solid #eef0f3;
+    box-shadow: 0 2px 8px rgba(20, 20, 43, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.offense-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 12px 0 0 12px;
+    background: var(--offense-accent, #4b5bd7);
+}
+
+.offense-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(20, 20, 43, 0.09);
+}
+
+.offense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.offense-header h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1a1a2e;
+}
+
+.offense-divider {
+    border: none;
+    border-top: 1px solid #f0f0f3;
+    margin: 14px 0;
+}
+
+.offense-details {
+    display: flex;
+    gap: 40px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .72rem;
+    font-weight: 600;
+    color: #9a9aa4;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.label i {
+    font-size: .72rem;
+}
+
+.offense-date-value {
+    margin: 6px 0 0;
+    font-size: .88rem;
+    color: #33333d;
+    font-weight: 500;
+}
+
+.level-badge,
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.level-badge::before,
+.status-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    flex-shrink: 0;
+}
+
+
+.level-badge.minor {
+    background: #e8ecff;
+    color: #4b5bd7;
+}
+
+.level-badge.major {
+    background: #ffe0e0;
+    color: #d63232;
+}
+
+.level-badge.grave {
+    background: #f4d7d9;
+    color: #7a1f2b;
+}
+
+.status-badge.pending {
+    background: #fdf1d0;
+    color: #92720b;
+}
+
+.status-badge.approved {
+    background: #d9f7dc;
+    color: #1f8a3d;
+}
+
+.status-badge.denied {
+    background: #ffe0e0;
+    color: #c62828;
+}
+
+.status-badge.unresolved {
+    background: #f0f0f0;
+    color: #555;
+}

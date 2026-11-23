@@ -1,0 +1,33 @@
+.depthead-profile-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.depthead-profile-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile-section h5 {
+    font-weight: 700;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Desktop: two-column layout for Personal Info + Account/Support */
+@media (min-width: 992px) {
+
+    .profile-lower-sections {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .profile-lower-sections > div {
+        flex: 1;
+    }
+}

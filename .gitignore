@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+target/
+.gradle/
+*.log
+.idea/
+.vscode/
+
+# database scripts contain real names and credentials
+backend/sql/
+
+frontend/public/handbooks/
+backend/src/main/resources/handbooks/

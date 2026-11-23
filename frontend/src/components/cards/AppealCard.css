@@ -1,0 +1,189 @@
+.appeal-card {
+    position: relative;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 16px 16px 20px;
+    box-shadow: 0 2px 10px rgba(20, 20, 43, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.appeal-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    border-radius: 14px 0 0 14px;
+    background: var(--appeal-accent, #92720b);
+}
+
+.appeal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(20, 20, 43, 0.1);
+}
+
+.appeal-card-id {
+    font-size: 0.7rem;
+    color: #a0a0aa;
+    letter-spacing: 0.03em;
+}
+
+.appeal-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.appeal-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 2px 0 8px;
+}
+
+.appeal-offense-type-badge {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.appeal-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.appeal-status-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    flex-shrink: 0;
+}
+
+.appeal-status-badge.pending {
+    background: #fdf1d0;
+    color: #92720b;
+}
+
+.appeal-status-badge.approved {
+    background: #d9f7dc;
+    color: #1f8a3d;
+}
+
+.appeal-status-badge.denied {
+    background: #ffe0e0;
+    color: #c62828;
+}
+
+.appeal-awaiting-box {
+    background: #fdf6e3;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.appeal-awaiting-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #92720b;
+    margin-bottom: 2px;
+}
+
+.appeal-awaiting-text {
+    font-size: 0.78rem;
+    color: #8a7550;
+    margin: 0;
+}
+
+.appeal-prefect-box {
+    background: #f4f4f7;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.appeal-prefect-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.appeal-prefect-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #1a1a2e;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.appeal-prefect-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.appeal-prefect-role {
+    font-size: 0.7rem;
+    color: #8a8a94;
+}
+
+.appeal-remarks-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 2px;
+}
+
+.appeal-remarks-text {
+    font-size: 0.78rem;
+    color: #6b6b76;
+    margin: 0;
+}
+
+.appeal-card-date {
+    font-size: 0.75rem;
+    color: #a0a0aa;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.appeal-edited-tag {
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #ecebfc;
+    color: #1b1b8f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.appeal-edit-btn {
+    margin-top: 10px;
+    padding: 6px 14px;
+    border: 1px solid #1b1b8f;
+    border-radius: 8px;
+    background: #fff;
+    color: #1b1b8f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.appeal-edit-btn:hover {
+    background: #ecebfc;
+}
